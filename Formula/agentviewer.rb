@@ -4,7 +4,7 @@
 class Agentviewer < Formula
   desc "CLI tool for AI agents to display rich content in a browser"
   homepage "https://github.com/pengelbrecht/agentviewer"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
