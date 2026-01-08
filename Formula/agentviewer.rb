@@ -10,14 +10,14 @@ class Agentviewer < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-darwin-arm64"
-      sha256 "caeabe94f97d4ea26095cee510ca176c7607411aa03cfc0575e7fecca4e71e9d"
+      sha256 "7ac095f528eb68146b1eb5a20aaaf1d9f67044468305fad288dd781e965bda71"
 
       def install
         bin.install "agentviewer-darwin-arm64" => "agentviewer"
       end
     else
       url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-darwin-amd64"
-      sha256 "525a990c6ca4c0803684244916f6c54c3c21e4e8524c272a224ee6c4e8d74e3e"
+      sha256 "d74715fef813beb2ae6b49f80c3460969934714bf6a79050f4729dfa03e0e06f"
 
       def install
         bin.install "agentviewer-darwin-amd64" => "agentviewer"
@@ -28,14 +28,14 @@ class Agentviewer < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-linux-arm64"
-      sha256 "50208997e697baf98c49fc5dcfe22b3713d349e42af676aed54e96d3fb18cf1a"
+      sha256 "d99a4c3141fb10ac5362eb22e1168789e310a01b90ddf8d4840c3a0f3c48f052"
 
       def install
         bin.install "agentviewer-linux-arm64" => "agentviewer"
       end
     else
       url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-linux-amd64"
-      sha256 "fa016b07e0e5dea80a44369c76904a8e3b8acc19b17f6bae5be832523b7f9a5d"
+      sha256 "5a99d2021f9a84efa162d1f93c834005f6886a85d6fe1668d5853b9653e92c4f"
 
       def install
         bin.install "agentviewer-linux-amd64" => "agentviewer"
