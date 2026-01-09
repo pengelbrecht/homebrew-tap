@@ -4,20 +4,18 @@
 class Spe2ed < Formula
   desc "Fast E2E testing with natural language, powered by Claude and chromedp"
   homepage "https://github.com/pengelbrecht/spe2ed"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/spe2ed_#{version}_darwin_arm64.tar.gz"
-      sha256 "0edff4e25a458900b7f8943f4fdca0e03b609bb1c253ff2c8c5595b8fa3b4177"
+      sha256 "27f7c6749bde947ee5d87baf775fc0c2357458f26ed93520ed6bf9ee88aee9e2"
 
       def install
         bin.install "spe2ed"
       end
     else
-      url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/spe2ed_#{version}_darwin_amd64.tar.gz"
-      sha256 "a5881e26b47d3a909e37113cd1b7bb7f6362ea386458c1a22c9de01ece3df38f"
+      sha256 "52fa8b23aa8d835388c287e94cf569f006e63b20fce72a15357bdf404337ce56"
 
       def install
         bin.install "spe2ed"
@@ -27,15 +25,13 @@ class Spe2ed < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/spe2ed_#{version}_linux_arm64.tar.gz"
-      sha256 "27016e55b6a7ebf8bad5a074eba6dc4e3427d35573d699c752e0ed96e953a01f"
+      sha256 "bb3d119529bf6abd1213df79f13809e11d77e946c6524429c43353978a8b18a2"
 
       def install
         bin.install "spe2ed"
       end
     else
-      url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/spe2ed_#{version}_linux_amd64.tar.gz"
-      sha256 "1ce50638807beda185948fc658216f58f741731dcfa40164df9606ff7124b2b8"
+      sha256 "7f486873270fd548d1809ca65b9c7f4d4176429e3fa82f3e4d5333f212edd03b"
 
       def install
         bin.install "spe2ed"
