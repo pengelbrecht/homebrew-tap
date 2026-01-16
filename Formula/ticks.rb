@@ -4,20 +4,20 @@
 class Ticks < Formula
   desc "Multiplayer-first issue tracker for AI coding agents"
   homepage "https://github.com/pengelbrecht/ticks"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/tk_#{version}_darwin_arm64.tar.gz"
-      sha256 "bd43b041a4729eab2590cce8d4268c5fc2d1eec278e6cbec28c192e5ce6dda98"
+      sha256 "303e0ef05f1b62380e477ab58e90537f3f7a33e6beec453e9b217a981e68d369"
 
       def install
         bin.install "tk"
       end
     else
       url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/tk_#{version}_darwin_amd64.tar.gz"
-      sha256 "d1d10f2a13be4cd9a6f61ad75f83237eb205064bd34e08a76cf66329c7f09b86"
+      sha256 "865d23d5edaaadac0a1db72993001513fa42dc61894a704d59c1aafe0cefd772"
 
       def install
         bin.install "tk"
@@ -28,14 +28,14 @@ class Ticks < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/tk_#{version}_linux_arm64.tar.gz"
-      sha256 "9cebdb0a60251337e2b4d182f7315b06a82b258e9d022199b465884b91699f82"
+      sha256 "67a7a209cd400c9c9176bdcb21e632543b84eaccd7ba19847dda152bb2b39851"
 
       def install
         bin.install "tk"
       end
     else
       url "https://github.com/pengelbrecht/homebrew-tap/releases/download/v#{version}/tk_#{version}_linux_amd64.tar.gz"
-      sha256 "5fd75352cde758446e29349c766ccf032cbf958b904b990339637f06ae440c70"
+      sha256 "30f74be31b035126a57ab05595f38fc2b88745dbfa85bf6242f7cef4e6d67716"
 
       def install
         bin.install "tk"
