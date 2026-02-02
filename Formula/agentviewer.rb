@@ -4,20 +4,18 @@
 class Agentviewer < Formula
   desc "CLI tool for AI agents to display rich content in a browser"
   homepage "https://github.com/pengelbrecht/agentviewer"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-darwin-arm64"
-      sha256 "7ac095f528eb68146b1eb5a20aaaf1d9f67044468305fad288dd781e965bda71"
+      sha256 "48bd5b4ccba29450c705a8bb0c5f224dbbdb290d8d9beb791966b565de11a3dd"
 
       def install
         bin.install "agentviewer-darwin-arm64" => "agentviewer"
       end
     else
-      url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-darwin-amd64"
-      sha256 "d74715fef813beb2ae6b49f80c3460969934714bf6a79050f4729dfa03e0e06f"
+      sha256 "c763e890551cee16044c6710e1ac6901f4c151c81f7b4ade6eed65c68cae506b"
 
       def install
         bin.install "agentviewer-darwin-amd64" => "agentviewer"
@@ -27,15 +25,13 @@ class Agentviewer < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-linux-arm64"
-      sha256 "d99a4c3141fb10ac5362eb22e1168789e310a01b90ddf8d4840c3a0f3c48f052"
+      sha256 "4284feeb159605aa7265f27695376af7e3240b081d57427b66cad1810958c29f"
 
       def install
         bin.install "agentviewer-linux-arm64" => "agentviewer"
       end
     else
-      url "https://github.com/pengelbrecht/agentviewer/releases/download/v#{version}/agentviewer-linux-amd64"
-      sha256 "5a99d2021f9a84efa162d1f93c834005f6886a85d6fe1668d5853b9653e92c4f"
+      sha256 "8f2e43a9333b84cc922a240d15bf534883815d73658f781aeccb69a44a57a43d"
 
       def install
         bin.install "agentviewer-linux-amd64" => "agentviewer"
